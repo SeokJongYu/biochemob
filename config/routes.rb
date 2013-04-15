@@ -1,9 +1,14 @@
 Biochemob::Application.routes.draw do
-  get "static_pages/home"
+  resources :items
 
-  get "static_pages/program"
+  match '/program', to: 'static_pages#program'
+  match '/links', to: 'static_pages#links'
 
-  get "static_pages/links"
+  #get "static_pages/home"
+
+  #get "static_pages/program"
+
+  #get "static_pages/links"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
