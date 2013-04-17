@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def links
   end
+
+  def donation
+  end
 end

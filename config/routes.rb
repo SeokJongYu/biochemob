@@ -1,9 +1,12 @@
 Biochemob::Application.routes.draw do
+  resources :attendees
+
+
   resources :items
 
   match '/program', to: 'static_pages#program'
   match '/links', to: 'static_pages#links'
-
+  match '/donation', to: 'static_pages#donation'
   #get "static_pages/home"
 
   #get "static_pages/program"

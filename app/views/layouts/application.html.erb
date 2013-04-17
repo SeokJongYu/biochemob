@@ -19,12 +19,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#">충북대 생화학과 총동문회</a>
+        <a class="brand" href="/">충북대 생화학과 총동문회</a>
         <div class="nav-collapse">
           <ul class="nav">
             <li><%= link_to '<i class="icon-gift icon-white"></i> 기부행사'.html_safe, items_path %></li>
             <li><%= link_to '<i class="icon-book icon-white"></i> 행사일정'.html_safe, program_path %></li>
-            <li><%= link_to '<i class="icon-user icon-white"></i> 후원방법'.html_safe %></li>
+            <li><%= link_to '<i class="icon-user icon-white"></i> 후원방법'.html_safe, donation_path %></li>
             <li><%= link_to '<i class="icon-bookmark icon-white"></i> 관련사이트'.html_safe, links_path %></li>
           </ul>
         </div>
@@ -46,5 +46,6 @@
       </div>
     </div>
   </div>
+
 </body>
 </html>
