@@ -1,14 +1,14 @@
 <%= form_for @attendee, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :sid, :class => 'control-label' %>
+    <%= f.label :sid, "학번", :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :sid, :class => 'text_field' %>
+      <%= f.text_field :sid, :class => 'text_field', :placeholder => "학번 작성은 년도의 뒷자리 (예시 87)"%>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :name, :class => 'control-label' %>
+    <%= f.label :name, "성명", :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :name, :class => 'text_field' %>
+      <%= f.text_field :name, :class => 'text_field',:placeholder => "이름을 반드시 기재해 주세요"%>
     </div>
   </div>
 
